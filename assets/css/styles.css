@@ -1,0 +1,27 @@
+/* Add color to navBar "Latitude" */
+/* .navbar-brand { 
+    background-color: #49A19A; 
+    height: 60px;
+
+    }   */
+
+/* Line color and break */
+hr.style1{
+	border-top: 2px solid #343a40; 
+}
+
+.header h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #56cc9d; 
+  } 
+
+p.p1 {
+    line-height: 2 ; 
+} 
+
+/* img {
+    float: start;
+  }   */
+/* Sets up grid for images in Vis */
+

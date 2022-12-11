@@ -18,18 +18,94 @@
 
   <body>
     <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarColor01">  
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">latitude vs. max temperature</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">latitude vs. humidity</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">latitude vs. cloudiness</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">latitude vs. wind speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Data</a>
+            </li>
+        </div>
+      </div>
+    </nav>
     <!-- End of navbar -->
 
     <!-- Start of container -->
+      <!-- Our rows function in containers (grid created). -->
+  <div class="container">
+
+    <div class="row">
+      <!-- 2/3 of screen (8/12) -->
+      <div class="col-md-6">
+        <div class="clearfix">
+        <header class="header"> 
+          <h1>Summary: Latitude vs. X</h1>
+        </header>
+        <hr class="style1">
+      </div>
+
+      <div class="col">
+        <div class="clearfix">
+          <img src="assets/images/Fig1.png" class="col-md-6 rounded float-sm-start" alt="Lat x Max Temp">    
+        <p class="p1"> 
+          The purpose of this project was to analyze how weather changes as 
+          you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        </p>
+        <p class="p1">
+          After assembling the dataset, we used Matplotlib to plot various 
+          aspects of the weather vs. latitude. Factors we looked at included:
+          temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+        </p>
+        </div>
+      </div>
+
+    </div>
           <!-- Start of Visualizations imageNav Area -->
+          <!-- Add vis header -->
+          <div class="col-md-5">
+              <header class="header"> 
+                <h1>Visualizations</h1>
+              </header>
+              <hr class="style1">
+            <!-- Add images in 2x2 grid -->
+            <div class="row">
+              <img src="assets/images/Fig1.png" alt="Lat x Max Temp" />
+              <img src="assets/images/Fig2.png" alt="Lat x Humidity" />
+            </div>
+            <div class="row">
+              <img src="assets/images/Fig3.png" alt="Lat x Cloudiness" />
+              <img src="assets/images/Fig4.png" alt="Lat x Wind Speed" />
+            </div>
+          </div>
           <!-- End of the Visualizations imageNav Area -->
+  </div>
     <!-- End of container -->
 
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
+    
     <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script> src="include.js" </script>
+    
+
   </body>
 
 </html> 
