@@ -14,16 +14,31 @@ hr.style1{
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 40px;  
-    color: #56cc9d; 
+    color: #78c2ad; 
   } 
 
 p.p1 {
+    margin-top: 25px;
     line-height: 2;
-    font-size: 16px ;  
+    font-size: 18px ;  
 }  
+
 
 /* img {
     float: start;
   }   */
 /* Sets up grid for images in Vis */
 
+.imageNav_plot {
+    width: 255px;
+    height: 225px;
+  }
+  
+  .imageNav_plot:hover {
+    opacity: 0.8;
+  }
+  
+  .imageNav_plot.active {
+    border: 2px solid #78c2ad;
+  }
+  

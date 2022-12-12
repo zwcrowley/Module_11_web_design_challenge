@@ -9,9 +9,10 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
+    <!-- Import stylesheet for Theme "Mint" -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
 
-    <!-- Our own CSS stylesheet -->
+    <!-- My own custom CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
   </head>
@@ -20,7 +21,7 @@
     <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/index.html">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,16 +32,15 @@
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="visualizations/humidity.html">humidity</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="visualizations/wind.html">Wind speed</a>
+                <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
               </div>
             </li>
             <li class="nav-item"><a class="nav-link active" href="comparison.html">Comparison</a></li>
             <li class="nav-item"><a class="nav-link active" href="data.html">Data</a></li>
-            <li><a href="">    </a></li> 
           </ul>
         </div>
       </div>
@@ -48,63 +48,52 @@
     <!-- End of navbar -->
 
     <!-- Start of container -->
-      <!-- Our rows function in containers (grid created). -->
   <div class="container">
 
     <div class="row">
-      <!-- 2/3 of screen (8/12) -->
-      <div class="col-md-6">
+      <div class="col-sm-7">
         <div class="clearfix">
         <header class="header"> 
           <h1>Summary: Latitude vs. X</h1>
         </header>
         <hr class="style1">
-      </div>
-
-      <div class="col">
-        <div class="clearfix">
-          <img src="assets/images/Fig1.png" class="col-md-6 rounded float-sm-start" alt="Lat x Max Temp">    
-        <p class="p1"> 
-          The purpose of this project was to analyze how weather changes as 
-          you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
-        </p>
-        <p class="p1">
-          After assembling the dataset, we used Matplotlib to plot various 
-          aspects of the weather vs. latitude. Factors we looked at included:
-          temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-        </p>
         </div>
-      </div>
-
-    </div>
-          <!-- Start of Visualizations imageNav Area -->
+        <article class="col">
+          <div class="clearfix">
+            <img src="assets/images/Fig1.png" class="col-md-6 rounded float-sm-start" alt="Lat x Max Temp">    
+          <p class="p1"> 
+            The purpose of this project was to analyze how weather changes as 
+            you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+          </p>
+          <p class="p1">
+            After assembling the dataset, we used Matplotlib to plot various 
+            aspects of the weather vs. latitude. Factors we looked at included:
+            temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+          </p>
+        </div>
+        </article> <!-- article -->
+      </div> <!-- col-sm-7 -->
+      
+      <div class="col-sm-5"
+        <article id="imageNav_article">
+        <!-- Start of Visualizations imageNav Area -->
+          <div class="imageNav_box">
           <!-- Add vis header -->
-          <div class="col">
-              <header class="header"> 
-                <h1>Visualizations</h1>
-              </header>
+              <header class="header"><h1>Visualizations</h1></header>
               <hr class="style1">
             <!-- Add images in 2x2 grid -->
-            <div class="row">
-                <div class="clearfix">
-                  <img src="assets/images/Fig1.png" alt="Lat x Max Temp" />
-                </div>
-                <div class="clearfix">
-                  <img src="assets/images/Fig2.png" alt="Lat x Humidity" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="clearfix"> 
-                  <img src="assets/images/Fig3.png" alt="Lat x Cloudiness" />
-                </div>
-                <div class="clearfix">
-                  <img src="assets/images/Fig4.png" alt="Lat x Wind Speed" />
-                </div>
-            </div>
-          </div>
-    </div>
+            <div id="plots">
+              <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" class="imageNav_plot" alt="Lat x Max Temp"></a>
+              <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" class="imageNav_plot" alt="Lat x Humidity"></a>
+              <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" class="imageNav_plot" alt="Lat x Cloudiness" ></a>
+              <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" class="imageNav_plot"alt="Lat x Wind Speed"></a> 
+            </div>                  
+          </div>  <!-- imageNav_box -->
+        </article>  <!-- imageNav_article -->
           <!-- End of the Visualizations imageNav Area -->
-  </div>
+      </div>  <!-- col-sm-5 -->
+    </div>  <!-- class="row" -->
+  </div>  <!-- class="container" -->
     <!-- End of container -->
 
     
