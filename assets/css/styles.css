@@ -1,3 +1,4 @@
+
 /* Add color to navBar "Latitude" */
 /* .navbar-brand { 
     background-color: #49A19A; 
@@ -42,8 +43,4 @@ p.p1 {
     border: 2px solid #78c2ad;
   }
   
-  @media screen and (max-width: 580px) {
-    .imageNav_plot {
-      display: block;
-      float: none;  }
-  }
+  
