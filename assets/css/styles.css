@@ -13,12 +13,14 @@ hr.style1{
 .header h1 {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 40px;  
     color: #56cc9d; 
   } 
 
 p.p1 {
-    line-height: 2 ; 
-} 
+    line-height: 2;
+    font-size: 16px ;  
+}  
 
 /* img {
     float: start;

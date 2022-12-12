@@ -20,7 +20,7 @@
     <!-- Start of navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand" href="/index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,21 +29,19 @@
             <li class="nav-item dropdown">
               <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">latitude vs. max temperature</a>
+                <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">latitude vs. humidity</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">humidity</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">latitude vs. cloudiness</a>
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">latitude vs. wind speed</a>
+                <a class="dropdown-item" href="visualizations/wind.html">Wind speed</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Data</a>
-            </li>
+            <li class="nav-item"><a class="nav-link active" href="comparison.html">Comparison</a></li>
+            <li class="nav-item"><a class="nav-link active" href="data.html">Data</a></li>
+            <li><a href="">    </a></li> 
+          </ul>
         </div>
       </div>
     </nav>
@@ -81,21 +79,30 @@
     </div>
           <!-- Start of Visualizations imageNav Area -->
           <!-- Add vis header -->
-          <div class="col-md-5">
+          <div class="col">
               <header class="header"> 
                 <h1>Visualizations</h1>
               </header>
               <hr class="style1">
             <!-- Add images in 2x2 grid -->
             <div class="row">
-              <img src="assets/images/Fig1.png" alt="Lat x Max Temp" />
-              <img src="assets/images/Fig2.png" alt="Lat x Humidity" />
+                <div class="clearfix">
+                  <img src="assets/images/Fig1.png" alt="Lat x Max Temp" />
+                </div>
+                <div class="clearfix">
+                  <img src="assets/images/Fig2.png" alt="Lat x Humidity" />
+                </div>
             </div>
             <div class="row">
-              <img src="assets/images/Fig3.png" alt="Lat x Cloudiness" />
-              <img src="assets/images/Fig4.png" alt="Lat x Wind Speed" />
+                <div class="clearfix"> 
+                  <img src="assets/images/Fig3.png" alt="Lat x Cloudiness" />
+                </div>
+                <div class="clearfix">
+                  <img src="assets/images/Fig4.png" alt="Lat x Wind Speed" />
+                </div>
             </div>
           </div>
+    </div>
           <!-- End of the Visualizations imageNav Area -->
   </div>
     <!-- End of container -->
