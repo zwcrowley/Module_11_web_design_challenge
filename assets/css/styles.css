@@ -18,6 +18,18 @@ hr.style1{
     color: #78c2ad; 
   } 
 
+.header h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 25px; 
+    text-align: center; 
+    color: #78c2ad; 
+  } 
+
+.img_vis_comp {
+    width: 100%;
+}
+
 p.p1 {
     margin-top: 25px;
     line-height: 2;
