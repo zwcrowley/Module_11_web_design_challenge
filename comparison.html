@@ -43,74 +43,78 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav>  
     <!-- End of navbar -->
 
     <!-- Start of container -->
-    <div class="container">
-
+    <div class="container-fluid main_container"> 
       <div class="row">
-        <div class="col-md-6">
-          <div class="clearfix">
-          <header class="header"> 
-            <h1>Comparison: Latitude vs X</h1>
-          </header>
-        </div>
-      </div>
-        <div class="row">
-          <div class="col-md-12">  
-            <hr class="style1">
-          </div>
-          <p class="p1">  
-            Click any plot to get an in-depth analysis.
-          </p>
-        </div>
-        <!-- New row for first sets of vis 2x2 in lg and 1x4 in sm -->
-        <div class="row"> 
-          <!-- Start 2 columns for temp and humidity -->
-          <div class="col-md-6 col-sm-12">
-            <div class="clearfix">
-              <header class="header"> 
-                <h3>vs. Max Temperature</h3>
-              </header>
-                <img src="assets/images/Fig1.png" class="img_vis_comp" alt="Lat x Max Temp">   
-            </div> <!-- clearfix -->
-          </div> <!-- col-md-6 col-sm-12 -->
-          <div class="col-md-6 col-sm-12">
-            <div class="clearfix">
-              <header class="header"> 
-                <h3>vs. Humidity</h3>
-              </header>
-                <img src="assets/images/Fig2.png" class="img_vis_comp" alt="Lat x Humidity">  
-            </div> <!-- clearfix --> 
-          </div> <!-- col-md-6 col-sm-12 -->
-        
-        <!-- New row for second set of vis 2x2 in lg and 1x4 in sm -->
-        <div class="row"> 
-          <!-- Start 2 columns for temp and humidity -->
-          <div class="col-md-6 col-sm-12">
-            <div class="clearfix">
-              <header class="header"> 
-                <h3>vs. Cloudiness</h3>
-              </header>
-                <img src="assets/images/Fig3.png" class="img_vis_comp" alt="Lat x Cloudiness">   
-            </div> <!-- clearfix -->
-          </div> <!-- col-md-6 col-sm-12 -->
-          <div class="col-md-6 col-sm-12">
-            <div class="clearfix">
-              <header class="header"> 
-                <h3>vs. Wind Speed</h3>
-              </header>
-                <img src="assets/images/Fig4.png" class="img_vis_comp" alt="Lat x Wind Speed">  
-            </div>  <!-- clearfix -->
-          </div> <!-- col-md-6 col-sm-12 -->
-        </div> <!-- row -->
-    </div> <!-- End of container -->
+        <div class="col comp_box">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="clearfix">
+                <header class="header"> 
+                  <h1>Comparison: Latitude vs X</h1>
+                </header>
+              </div> <!-- clearfix -->
+          </div> <!-- row for header -->
+          <div class="row">
+            <div class="col-md-12">  
+                <hr class="style1">
+            </div>
+              <p class="p1">  
+                Click any plot to get an in-depth analysis.
+              </p>
+          </div> <!-- end row for p1-->
+          <!-- New row for first sets of vis 2x2 in lg and 1x4 in sm-->
+          <div class="row"> 
+              <!-- Start 2 columns for temp and humidity -->
+              <div class="col-md-6 col-sm-12">
+                <div class="clearfix">
+                  <header class="header"> 
+                    <h3>vs. Max Temperature</h3>
+                  </header>
+                    <img src="assets/images/Fig1.png" class="img_vis_comp" alt="Lat x Max Temp">   
+                </div> <!-- clearfix -->
+              </div> <!-- col-md-6 col-sm-12 -->
+              <div class="col-md-6 col-sm-12">
+                <div class="clearfix">
+                  <header class="header"> 
+                    <h3>vs. Humidity</h3>
+                  </header>
+                    <img src="assets/images/Fig2.png" class="img_vis_comp" alt="Lat x Humidity">  
+                </div> <!-- clearfix --> 
+              </div> <!-- col-md-6 col-sm-12 -->
+            
+            <!-- New row for second set of vis 2x2 in lg and 1x4 in sm -->
+            <div class="row"> 
+              <!-- Start 2 columns for temp and humidity -->
+              <div class="col-md-6 col-sm-12">
+                <div class="clearfix">
+                  <header class="header"> 
+                    <h3>vs. Cloudiness</h3>
+                  </header>
+                    <img src="assets/images/Fig3.png" class="img_vis_comp" alt="Lat x Cloudiness">   
+                </div> <!-- clearfix -->
+              </div> <!-- col-md-6 col-sm-12 -->
+              <div class="col-md-6 col-sm-12">
+                <div class="clearfix">
+                  <header class="header"> 
+                    <h3>vs. Wind Speed</h3>
+                  </header>
+                    <img src="assets/images/Fig4.png" class="img_vis_comp" alt="Lat x Wind Speed">  
+                </div>  <!-- clearfix -->
+              </div> <!-- col-md-6 col-sm-12 -->
+            </div> <!-- row -->
+          </div> <!-- row -->
+        </div> <!-- summary_box -->
+      </div> <!-- initial row -->
+    </div>  <!-- End of container -->
     <!-- End of container -->
 
-    <!-- Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script> src="include.js" </script>
+      <!-- Bootstrap CDN -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script> src="include.js" </script>
     
 
   </body>

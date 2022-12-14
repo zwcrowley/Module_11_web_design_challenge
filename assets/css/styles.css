@@ -4,15 +4,23 @@ html{
 }
 
 .main_container{
-  background-color: #eceeef;
+  background-color: #eceeef; 
 }
 
-/* summary_box */
+/* summary_box is for landing page*/
 .summary_box {
   position: relative;
   background: white;
-  padding: 75px;
+  padding: 25px;
   margin: 25px; 
+  margin-left: 25px; 
+}
+/* comp_box is for comparison page */
+.comp_box {
+  position: relative;
+  background: white;
+  margin: 175px;  
+  padding: 50px;
 }
 
 /* #summ_pic {
