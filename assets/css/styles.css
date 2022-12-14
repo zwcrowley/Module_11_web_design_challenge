@@ -2,9 +2,17 @@
 html{
   background-color: #eceeef;  
 }
-
+/* Change color around main-container */
 .main_container{
   background-color: #eceeef; 
+}
+
+/* vis_box is for landing page*/
+.vis_box {
+  position: relative;
+  background: white;
+  padding: 75px;
+  margin: 25px; 
 }
 
 /* summary_box is for landing page*/
@@ -14,6 +22,7 @@ html{
   padding: 75px;
   margin: 25px; 
 }
+
 /* comp_box is for comparison page */
 .comp_box {
   position: relative;
@@ -22,32 +31,21 @@ html{
   padding: 50px;
 }
 
-/* #summ_pic {
-  position: relative;
-  width: 255px;
-  height: 225px; 
-  padding: 15px;
-} */
-
-/* Add color to navBar "Latitude" */
-/* .navbar-brand { 
-    background-color: #49A19A; 
-    height: 60px;
-
-    }   */
-
-/* Line color and break */
+/* Horz Line color and break */
 hr.style1{
 	border-top: 2px solid #343a40; 
 }
 
+/* Slightly change the h1 header */
 .header h1 {
+    overflow: hidden;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 40px;  
     color: #78c2ad; 
   } 
 
+/* Slightly change the h3 header */
 .header h3 {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -56,37 +54,66 @@ hr.style1{
     color: #78c2ad; 
   } 
 
-.img_vis_comp {
-    width: 100%;
-}
-
+/* Adjust paragraph font */
 p.p1 {
     margin: 25px;
     line-height: 2;
     font-size: 18px ;  
     padding: 5px;
-
 }  
 
+/* Adjust the img width for comparison page */
+.img_vis_comp {
+    width: 100%;
+}
 
-/* img {
-    float: start;
-  }   */
-/* Sets up grid for images in Vis */
-
+/* Sets up plot images width/position/padding */
 .imageNav_plot {
     position: relative;
     width: 100%;
     padding: 5px;
     
   }
-  
+
+/* Sets image plots to have a hover that is more opaque */
 .imageNav_plot:hover {
     opacity: 0.6; 
 }
-  
+
+/* This puts a border around the selected image in the imageNav visual sidebar */  
 .imageNav_plot.active {
     border: 4px solid #78c2ad;
 }
   
-  
+/* Media queries */
+@media screen and (max-width: 768px) {
+  html{
+    background-color: white;  
+  }
+  /* Change color around main-container */
+  .main_container{
+    background-color: white; 
+  }
+  /* summary_box is for landing page*/
+.summary_box {
+  position: relative;
+  background: white;
+  padding: 20px;
+  margin: 10px; 
+}
+  /* vis_box for imageNav sidebar */
+  .vis_box {
+    float: none;
+    display: block;
+    background: white;
+    padding: 20px;
+    margin: 10px; 
+  }
+/* comp_box is for comparison page */
+.comp_box {
+  position: relative;
+  background: white;
+  margin: 25px;  
+  padding: 10px;
+}
+}
