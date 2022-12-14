@@ -48,11 +48,11 @@ p.p1 {
   }
   
   .imageNav_plot:hover {
-    opacity: 0.8;
+    opacity: 0.6; 
   }
   
   .imageNav_plot.active {
-    border: 2px solid #78c2ad;
+    border: 4px solid #78c2ad;
   }
   
   
