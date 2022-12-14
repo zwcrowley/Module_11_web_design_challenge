@@ -11,9 +11,8 @@ html{
 .summary_box {
   position: relative;
   background: white;
-  padding: 25px;
+  padding: 75px;
   margin: 25px; 
-  margin-left: 25px; 
 }
 /* comp_box is for comparison page */
 .comp_box {
